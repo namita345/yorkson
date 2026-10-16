@@ -132,7 +132,7 @@ export default function WhoWeAre(){return <div className="who-page" id="top">
   <section className="who-cta">
     <div className="wrap who-cta-layout">
       <div className="who-cta-picture"><img src="/images/who-cta.webp" alt="Illustrative concept artwork of a smiling child" loading="lazy" /></div>
-      <div className="who-cta-copy"><p className="eyebrow">COME SEE OUR LITTLE WORLD</p><h2>We’d <span>Love to</span><br/>Welcome You!</h2><p>We’d love to meet your family. Ask about our program, current availability or a chance to visit in person.</p><div className="who-cta-buttons"><ButtonArrow href="/contact/#enquiry">Book a Tour</ButtonArrow><a href={`tel:${SITE.phoneLink}`} className="who-cta-call">☎ {SITE.phone}</a></div></div>
+      <div className="who-cta-copy"><p className="eyebrow">COME SEE OUR LITTLE WORLD</p><h2>We’d <span>Love to</span><br/>Welcome You!</h2><p>We’d love to meet your family. Ask about our program, current availability or a chance to visit in person.</p><div className="who-cta-buttons"><ButtonArrow href="/contact/#enquiry">Book a Tour</ButtonArrow><a href="/contact/" className="who-cta-call">✉ Contact Us</a></div></div>
       <Doodle type="sun" color="#e9a807" className="who-cta-sun"/><Sparkle className="who-cta-sparkle" symbol="✿"/>
     </div>
   </section>

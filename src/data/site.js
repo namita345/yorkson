@@ -2,6 +2,7 @@ export const SITE = {
   name: 'Yorkson Childcare Academy',
   phone: '(604) 657-7336',
   phoneLink: '+16046577336',
+  openingHours: '8:00 AM – 5:00 PM',
   email: 'care@yorksonchildcare.com',
   address: '20683 76B Avenue, Langley, BC V2Y 3P6',
   googleMaps: 'https://www.google.com/maps/search/?api=1&query=Yorkson%20Childcare%20Academy%2020683%2076B%20Ave%20Langley%20BC',

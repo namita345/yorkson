@@ -42,7 +42,7 @@ export default function ContactPage(){
           <a className="cpage-info-card cpage-info-card--pink" href={SITE.googleMaps} target="_blank" rel="noopener noreferrer"><span className="cpage-info-icon">⌖</span><div><strong>Our Location</strong><span>20683 76B Avenue<br/>Langley, BC V2Y 3P6</span></div><span className="cpage-card-arrow">↗</span></a>
           <a className="cpage-info-card cpage-info-card--blue" href={`tel:${SITE.phoneLink}`}><span className="cpage-info-icon">☎</span><div><strong>Call Us</strong><span>{SITE.phone}</span></div><span className="cpage-card-arrow">↗</span></a>
           <a className="cpage-info-card cpage-info-card--mint" href={`mailto:${SITE.email}`}><span className="cpage-info-icon">✉</span><div><strong>Email Us</strong><span>{SITE.email}</span></div><span className="cpage-card-arrow">↗</span></a>
-          <div className="cpage-info-card cpage-info-card--yellow"><span className="cpage-info-icon">☀</span><div><strong>Visit by Appointment</strong><span>Contact us to arrange a tour and confirm current hours.</span></div></div>
+          <div className="cpage-info-card cpage-info-card--yellow"><span className="cpage-info-icon">☀</span><div><strong>Opening Hours</strong><span>{SITE.openingHours}<br/>Please arrange tours in advance.</span></div></div>
         </div>
         <div className="cpage-map-title"><span aria-hidden="true">📍</span><h3>Find Us <em>Here!</em></h3></div>
         <div className="cpage-map"><iframe loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Map showing Yorkson Childcare Academy in Langley, British Columbia" src="https://maps.google.com/maps?q=Yorkson%20Childcare%20Academy%2020683%2076B%20Ave%20Langley%20BC&t=&z=15&ie=UTF8&iwloc=&output=embed" allowFullScreen/></div>

@@ -1,4 +1,21 @@
-# Yorkson Childcare Academy — React/Vite (Phase 5)
+# Yorkson Childcare Academy — React/Vite (Phase 6: homepage refresh)
+
+## Latest update — approved homepage reference
+
+- **Header:** clean white navigation with exactly four links (Home, Who We Are, Gallery, Contact Us), plus a separate pink **Book a Tour** button linking to `/contact/#enquiry`.
+- **Homepage:** only the first five sections have been visually refreshed to match the supplied colorful layout: Hero, About, Programs, Reviews, Gallery. Editable HTML/CSS/React components, not a flattened background image.
+- **Homepage Get in Touch:** deliberately untouched. `src/components/Contact.jsx` and `src/components/EnquiryForm.jsx` are byte-for-byte unchanged from Phase 5; the form remains in place and uses the same serverless endpoint.
+- **Business hours:** `SITE.openingHours` is **8:00 AM – 5:00 PM**, displayed only on Contact Us and in the shared footer contact-details area. Days of operation are unconfirmed; do not invent days.
+- **Phone number:** shown in the footer and Contact Us, not scattered through the five redesigned homepage sections. A redundant Who We Are phone CTA and the Privacy Policy's duplicate phone link now direct visitors to Contact Us instead. The unchanged form’s error state still provides a call fallback.
+- **Gallery/reviews:** concept photos are labelled previews; actual Google Business feed still needs client-approved API authorization. Reviews are genuine excerpts, not automatically synchronized.
+- **New stylesheet:** `src/home-refresh.css` is scoped to `.home-refresh` and the common header. All four primary routes and Privacy Policy are preserved.
+
+**Vercel setup:** upload the contents of the `yorkson-react` folder to your repository root; use Vite, `npm run build`, output `dist`. Deploy to a preview URL and confirm the final fonts, images, layout and contact delivery before touching the current WordPress site.
+
+**Validation:** 16/16 JSX sources parse with the TypeScript parser; the form and homepage contact section match Phase 5 byte-for-byte; Vite's dependency install/full production build still needs Vercel because the npm registry is unavailable here. The separate HTML preview is a *visual-only snapshot*; the deployable source of truth is the React project.
+
+---
+
 
 **Status:** 4-page website plus standalone Privacy Policy. Built to stage on Vercel. The existing WordPress installation remains unchanged.
 
@@ -90,3 +107,8 @@ vercel.json                        Direct-link rewrites (including /privacy-poli
 ## Validation
 
 Static checks for JSX parsing, internal routes, policy links and rewrites are included as part of the Phase 5 packaging step. If npm dependencies cannot be installed in this environment, run `npm install && npm run build` on Vercel before treating the package as production-ready.
+
+
+## Phase 7 — diagonal homepage revision
+
+The new `src/angled-home.css` provides an **absolutely positioned, transparent homepage header**, strong angled transitions between Hero, About, Programs, Reviews and Gallery, and layered collage styling. All other routes keep their prior header and layout. The Get in Touch section and `EnquiryForm.jsx` were verified unchanged byte-for-byte from Phase 6. See `PHASE-7-NOTES.md`. The standalone visual preview is for design inspection only; test the live React page through Vercel.

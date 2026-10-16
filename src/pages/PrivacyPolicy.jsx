@@ -89,7 +89,7 @@ export default function PrivacyPolicy(){
 
         <article id="updates" className="privacy-section privacy-section-last"><span className="privacy-number">09</span><h2>Updates and how to contact us</h2>
           <p>We may update this policy when the website changes, integrations are enabled, or our practices change. The date near the top will be revised when the policy is published or materially updated.</p>
-          <div className="privacy-address"><span aria-hidden="true">💌</span><div><strong>{SITE.name}</strong><p>{SITE.address}</p><a href={`mailto:${SITE.email}`}>{SITE.email}</a><a href={`tel:${SITE.phoneLink}`}>{SITE.phone}</a></div></div>
+          <div className="privacy-address"><span aria-hidden="true">💌</span><div><strong>{SITE.name}</strong><p>{SITE.address}</p><a href={`mailto:${SITE.email}`}>{SITE.email}</a><a href="/contact/">Contact Us</a></div></div>
         </article>
       </div>
     </div></section>

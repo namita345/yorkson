@@ -12,7 +12,7 @@ import ContactPage from './pages/ContactPage';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Footer from './components/Footer';
 
-function Homepage(){return <><Hero/><About/><Programs/><Reviews/><Gallery/><Contact/></>}
+function Homepage(){return <><div className="home-refresh"><Hero/><About/><Programs/><Reviews/><Gallery/></div><Contact/></>}
 
 export default function App(){
   const path=window.location.pathname;
