@@ -19,7 +19,7 @@ export default function ContactPage(){
         <div className="cpage-hero-copy"><p className="cpage-script-label">Contact Us <span aria-hidden="true">✷</span></p>
           <h1 id="cpage-title"><span>We’d Love</span><br/><span>to Hear</span> <span className="cpage-yellow">From</span><br/><span className="cpage-green">You!</span></h1>
           <p>Have a question, want to arrange a tour or learn more about our program? We're here to help your little learner take their next big step.</p>
-          <div className="cpage-hero-actions"><ButtonArrow href="#enquiry" variant="pink">Send an Enquiry</ButtonArrow><a href={`tel:${SITE.phoneLink}`} className="cpage-outline-button">☎ Call Us</a></div>
+          <div className="cpage-hero-actions"><ButtonArrow href="#enquiry" variant="pink">Send an Enquiry</ButtonArrow><a href="#cpage-direct-contact" className="cpage-outline-button">☎ Text or Call Us</a></div>
           <span className="cpage-hero-scribble" aria-hidden="true">✎</span>
         </div>
         <div className="cpage-hero-art">
@@ -38,9 +38,9 @@ export default function ContactPage(){
       <div className="cpage-form-shell"><div className="cpage-form-heading"><span className="cpage-envelope" aria-hidden="true">✉</span><div><p className="cpage-overline">A little note from you</p><h2 id="cpage-form-title"><span>Send Us</span> a Message</h2><p>Fill in the form and we’ll get back to you as soon as we can.</p></div></div><div className="cpage-form-card"><EnquiryForm source="Yorkson React dedicated contact page"/></div><span className="cpage-heart-doodle" aria-hidden="true">♡</span></div>
 
       <div className="cpage-info"><div className="cpage-info-heading"><p className="cpage-overline">Come say hello</p><h2>Our <span>Information</span><span className="cpage-info-star" aria-hidden="true">☆</span></h2><p>We’re always happy to answer questions about childcare, our program, or arranging a visit.</p></div>
-        <div className="cpage-info-grid">
+        <div className="cpage-info-grid" id="cpage-direct-contact">
           <a className="cpage-info-card cpage-info-card--pink" href={SITE.googleMaps} target="_blank" rel="noopener noreferrer"><span className="cpage-info-icon">⌖</span><div><strong>Our Location</strong><span>20683 76B Avenue<br/>Langley, BC V2Y 3P6</span></div><span className="cpage-card-arrow">↗</span></a>
-          <a className="cpage-info-card cpage-info-card--blue" href={`tel:${SITE.phoneLink}`}><span className="cpage-info-icon">☎</span><div><strong>Call Us</strong><span>{SITE.phone}</span></div><span className="cpage-card-arrow">↗</span></a>
+          <div className="cpage-info-card cpage-info-card--blue"><span className="cpage-info-icon">☎</span><div><strong>Text or Call Us</strong><span>{SITE.phone}</span><span className="cpage-contact-actions"><a href={`sms:${SITE.phoneLink}`} aria-label="Text Yorkson Childcare Academy">Text ↗</a><a href={`tel:${SITE.phoneLink}`} aria-label="Call Yorkson Childcare Academy">Call ↗</a></span></div></div>
           <a className="cpage-info-card cpage-info-card--mint" href={`mailto:${SITE.email}`}><span className="cpage-info-icon">✉</span><div><strong>Email Us</strong><span>{SITE.email}</span></div><span className="cpage-card-arrow">↗</span></a>
           <div className="cpage-info-card cpage-info-card--yellow"><span className="cpage-info-icon">☀</span><div><strong>Opening Hours</strong><span>{SITE.openingHours}<br/>Please arrange tours in advance.</span></div></div>
         </div>

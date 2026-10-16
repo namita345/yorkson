@@ -88,17 +88,17 @@ export default function WhoWeAre(){return <div className="who-page" id="top">
 
   <section className="who-educator" id="who-educator">
     <div className="wrap who-educator-layout">
-      <div className="who-educator-graphic who-reveal" aria-label="Colorful graphic introducing the academy educator">
+      <div className="who-educator-graphic who-reveal" aria-label="Colorful graphic representing our play-based approach">
         <div className="who-edu-ring"><span role="img" aria-label="Rainbow, books and flowers">🌈</span><span className="who-edu-art">📚</span><span className="who-edu-sun">☀</span></div>
-        <div className="who-edu-card"><span>hello from</span><strong>Miss Nadia ♡</strong></div>
+        <div className="who-edu-card"><span>growing with</span><strong>Care &amp; Play ♡</strong></div>
         <Doodle type="heart" color="#f82d86" className="who-edu-heart"/>
       </div>
       <div className="who-educator-copy who-reveal">
-        <p className="eyebrow">MEET OUR EDUCATOR</p>
-        <h2><span className="who-text-pink">Caring,</span> Experienced in <span className="who-text-blue">Early Learning.</span></h2>
-        <p>Meet <strong>Miss Nadia</strong>, Yorkson Childcare Academy’s Early Childhood Educator (ECE). She creates engaging, meaningful experiences through play, creativity, music, movement and hands-on discovery.</p>
-        <p>Her focus is on getting to know each child, nurturing their confidence and building positive relationships with families.</p>
-        <a className="who-mail-link" href={`mailto:${SITE.email}`}>Have a question for our educator? <span>Say hello →</span></a>
+        <p className="eyebrow">OUR APPROACH</p>
+        <h2><span className="who-text-pink">Caring,</span> Creative and <span className="who-text-blue">Play-Based.</span></h2>
+        <p>With play-based learning, we support little learners with care, creativity, and meaningful everyday moments.</p>
+        <p>We get to know every child, nurture their confidence and create positive relationships with families through music, movement, hands-on discovery and imagination.</p>
+        <a className="who-mail-link" href={`mailto:${SITE.email}`}>Have a question about our approach? <span>Say hello →</span></a>
       </div>
     </div>
   </section>

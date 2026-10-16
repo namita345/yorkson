@@ -246,3 +246,32 @@
  .home-refresh .program-heading{display:grid;grid-template-columns:minmax(0,1fr) 200px;gap:15px}
  .home-refresh .program-heading h2{white-space:normal;font-size:clamp(2.65rem,4.3vw,3.55rem)}
 }
+
+/* PHASE 8 — CLIENT COPY + ACCESSIBLE HERO TYPOGRAPHY */
+/* The previous light yellow and cyan headline colors blended into the pale hero.
+   Darker inks preserve the playful rainbow feel and improve readability. */
+.home-refresh .hero h1 .line1 {
+  font-size:.94em;
+  line-height:1.06;
+  white-space:normal !important;
+  letter-spacing:-.015em;
+  text-shadow:none;
+}
+.home-refresh .hero h1 .line1 span {display:inline-block}
+.home-refresh .hero h1 .line1 span:nth-child(1){color:#b31761}
+.home-refresh .hero h1 .line1 span:nth-child(2){color:#173766}
+.home-refresh .hero h1 .line1 span:nth-child(3){color:#05678f}
+.home-refresh .hero h1 .line2 {color:#18305e}
+.home-refresh .hero-strong {color:#142b54}
+.home-refresh .hero-intro {color:#273b5b}
+@media(max-width:620px){
+  .home-refresh .hero h1 .line1 {font-size:.9em;line-height:1.06;letter-spacing:-.025em}
+}
+@media(max-width:375px){
+  .home-refresh .hero h1 .line1 {font-size:.79em}
+}
+
+/* Keep the cyan corner behind the art rather than directly beneath the longer title on phones. */
+@media(max-width:620px){
+  .home-refresh .hero .hero-side-b{right:-105px;top:-115px;width:195px;height:165px;transform:rotate(-32deg)}
+}

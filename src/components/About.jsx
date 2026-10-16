@@ -13,7 +13,7 @@ export default function About(){return <section id="about" className="about-sect
       <p className="eyebrow">ABOUT US</p>
       <h2 id="home-about-title">More Than Childcare,<br/><span>A Brighter Tomorrow</span></h2>
       <p>Yorkson Childcare Academy is a place where children feel safe, loved and inspired to be their amazing selves. We provide a nurturing environment that encourages curiosity, creativity and confidence.</p>
-      <p>With Miss Nadia, every child's individual journey matters.</p>
+      <p>With play-based learning, we support little learners with care, creativity, and meaningful everyday moments.</p>
       <ButtonArrow href="/who-we-are/">Our Story</ButtonArrow>
     </div>
   </div>

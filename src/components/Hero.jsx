@@ -11,7 +11,7 @@ export default function Hero(){
       <div className="hero-copy">
         <Doodle type="sun" className="hero-sun float-y" color="#ffbf00"/>
         <div className="hero-sparkle--one" aria-hidden="true">✦</div>
-        <h1 id="home-hero-title"><span className="line1"><span>A</span> <span>Colorful</span> <span>World</span></span><span className="line2">for Little Learners</span></h1>
+        <h1 id="home-hero-title"><span className="line1"><span>A</span> <span>Beautiful</span> <span>World</span></span><span className="line2">for Little Learners</span></h1>
         <div className="hero-rainbow-dash" aria-hidden="true"><span/><span/><span/></div>
         <p className="hero-strong">Play. Care. Creativity. Confidence.</p>
         <p className="hero-intro">At Yorkson Childcare Academy, we nurture bright futures through a safe, loving and inspiring play-based environment.</p>
