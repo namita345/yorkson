@@ -60,7 +60,7 @@ export default function PrivacyPolicy(){
           <ul>
             <li><strong>Vercel</strong>, for website hosting, delivery, and related security/diagnostics.</li>
             <li><strong>Resend</strong>, if configured by Yorkson, to deliver your enquiry to the academy’s email inbox. The form is not enabled for sending until the owner connects and verifies this service.</li>
-            <li><strong>Google</strong>, for embedded Maps, links to Google reviews, and photos drawn from the academy’s Google Business listing when the gallery integration is authorized.</li>
+            <li><strong>Google</strong>, for Maps, reviews and listing photos when connected via Places API or an authorized Google Business Profile. Google may process information associated with accessing these images and reviews. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google’s Privacy Policy</a> and <a href="https://maps.google.com/help/terms_maps/" target="_blank" rel="noopener noreferrer">Google Maps Terms</a>.</li>
             <li><strong>Google Fonts</strong>, to load the typefaces used in our website design.</li>
           </ul>
           <p>These services may process technical information in their own systems, potentially outside British Columbia or Canada. We should review their applicable terms and privacy practices before publishing. We may also disclose information where required by law.</p>

@@ -9,16 +9,6 @@ export const SITE = {
   existingSite: 'https://yorksonchildcare.com/',
 };
 
-// Placeholder images are CROPPED FROM THE APPROVED VISUAL MOCKUP, not actual daycare photos.
-// Replace before production launch using Yorkson-owned media or a consented photo library.
-export const previewGallery = [
-  { src: '/images/gallery-one.webp', alt: 'Illustrative mockup: smiling child with painted hands', label: 'Creative moments' },
-  { src: '/images/gallery-two.webp', alt: 'Illustrative mockup: children playing with blocks', label: 'Learning together' },
-  { src: '/images/gallery-three.webp', alt: 'Illustrative mockup: child outdoors', label: 'Everyday adventures' },
-  { src: '/images/gallery-four.webp', alt: 'Illustrative mockup: children exploring outside', label: 'Little friendships' },
-  { src: '/images/gallery-five.webp', alt: 'Illustrative mockup: child smiling on playground', label: 'Happy discoveries' },
-];
-
 export const programCards = [
   { emoji: '🎨', title: 'Creative Play', text: 'Art, music, imagination and hands-on fun.', color: 'pink', accent: '#f83182' },
   { emoji: '🔠', title: 'Early Learning', text: 'Building strong foundations for the future.', color: 'blue', accent: '#009ce3' },

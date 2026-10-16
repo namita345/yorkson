@@ -1,4 +1,14 @@
-# Yorkson Childcare Academy — React/Vite (Phase 6: homepage refresh)
+## Latest update — Phase 9 Google photos and reviews
+
+Both the homepage and the dedicated Gallery page can now show photos from Google, and the homepage reviews section can now show authentic reviews. New server-side endpoints: `api/gallery.js` and `api/reviews.js`, backed by `lib/google-content.js`. **The live Google feed is not active until Vercel environment variables are configured.**
+
+Read **`GOOGLE-INTEGRATION-SETUP.md`** for setup, privacy, billing, source/author credit, children’s photo consent, and testing. `npm run test:google` runs offline mocked integration tests.
+
+The homepage form, validation, email API, angled visual design and navigation remain untouched.
+
+---
+
+# Yorkson Childcare Academy — React/Vite (Phase 9: Google photos + reviews integration)
 
 ## Latest update — approved homepage reference
 
@@ -7,7 +17,7 @@
 - **Homepage Get in Touch:** deliberately untouched. `src/components/Contact.jsx` and `src/components/EnquiryForm.jsx` are byte-for-byte unchanged from Phase 5; the form remains in place and uses the same serverless endpoint.
 - **Business hours:** `SITE.openingHours` is **8:00 AM – 5:00 PM**, displayed only on Contact Us and in the shared footer contact-details area. Days of operation are unconfirmed; do not invent days.
 - **Phone number:** shown in the footer and Contact Us, not scattered through the five redesigned homepage sections. A redundant Who We Are phone CTA and the Privacy Policy's duplicate phone link now direct visitors to Contact Us instead. The unchanged form’s error state still provides a call fallback.
-- **Gallery/reviews:** concept photos are labelled previews; actual Google Business feed still needs client-approved API authorization. Reviews are genuine excerpts, not automatically synchronized.
+- **Gallery/reviews:** Live Google photos and reviews appear automatically after configured credentials. Until then, the gallery displays clearly labelled illustrative photos and the reviews section directs visitors to the Google listing.
 - **New stylesheet:** `src/home-refresh.css` is scoped to `.home-refresh` and the common header. All four primary routes and Privacy Policy are preserved.
 
 **Vercel setup:** upload the contents of the `yorkson-react` folder to your repository root; use Vite, `npm run build`, output `dist`. Deploy to a preview URL and confirm the final fonts, images, layout and contact delivery before touching the current WordPress site.
@@ -57,7 +67,7 @@ In Vercel Environment Variables, set the actual verified values listed in `.env.
 
 **Google gallery:** use the owner-authorized Google Business Profile credentials, or the alternative public Google Places API credentials, as outlined in `.env.example`. Keep credentials server-side. Until configured, the gallery is clearly identified as illustrative artwork; it is NOT a live feed. Confirm rights/guardian permission to display photos of children before launch.
 
-**Google reviews:** homepage snippets are manually curated short excerpts, not a continuously updated Google widget. Review the permission, attribution and presentation before launch.
+**Google reviews:** Homepage review cards now fetch `/api/reviews` dynamically. Google results are not copied into the source or stored. A Google connection is required to display live reviews.
 
 **Privacy:** We drafted `/privacy-policy/` from the **new site’s actual data flows** (parent enquiry, Vercel hosting, Resend email delivery if enabled, Google Maps/photos, Google Fonts). We could not verify an existing published Yorkson privacy-policy page, and we did NOT copy a missing policy. The current policy is **a draft for the business owner and legal/privacy reviewer**. Before publishing:
 
@@ -92,6 +102,9 @@ src/
 api/
   contact.js                       Serverless email provider integration
   gallery.js                       Serverless Google gallery integration
+  reviews.js                       Serverless Google reviews integration
+lib/google-content.js             Server-only Google API client and normalizers
+src/hooks/useGoogleContent.js      Homepage gallery and reviews fetch hook
 public/images/                     Approved illustrative mockup art, not official childcare photography
 vercel.json                        Direct-link rewrites (including /privacy-policy/)
 .env.example                       Required server-only environment variables
